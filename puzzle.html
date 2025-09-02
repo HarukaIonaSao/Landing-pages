@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogos de Puzzle | Jogon</title>
+  <link rel="shortcut icon" href=".//src/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/root.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/cards.css" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">📦 Jogos</div>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="estrategia.html">🎯 Estratégia</a>
+      <a class="active" href="puzzle.html">🧩 Puzzle</a>
+      <a href="simulacao.html">🛠 Simulação</a>
+     
+    </nav>
+  </header>
+
+  <main>
+    <h1>Jogos de Puzzle</h1>
+
+    <section class="favoritos">
+      <h2>Seus Favoritos em Puzzle</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <img src="./src/img/portal.jpeg" alt="Portal 2" />
+          <h3>Portal 2</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="portal">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/monument.jpeg" alt="Monument Valley" />
+          <h3>Monument Valley</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="monument">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/baba.jpeg" alt="Baba Is You" />
+          <h3>Baba Is You</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="baba-is-you">🤍</button>
+        </div>
+    </section>
+
+    <section class="todos">
+      <h2>Todos os Jogos de Puzzle</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="./src/img/tetris.jpeg" alt="Tetris" />
+          <h3>Tetris</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="tetris">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/limbo.jpeg" alt="Limbo" />
+          <h3>Limbo</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="limbo">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/thewitness.jpeg" alt="The Witness" />
+          <h3>The Witness</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="the-witness">🤍</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joca Games - Todos os direitos reservados</p>
+  </footer>
+  <script src="./src/scripts/favoritos.js" defer></script>
+
+</body>
+
+</html>

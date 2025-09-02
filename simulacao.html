@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogos de Simulação | Joca Games</title>
+  <link rel="shortcut icon" href=".//src/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/root.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/cards.css" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">📦 Jogos</div>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="estrategia.html">🎯 Estratégia</a>
+      <a href="puzzle.html">🧩 Puzzle</a>
+      <a class="active" href="simulacao.html">🛠 Simulação</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <h1>Jogos de Simulação</h1>
+
+    <section class="favoritos">
+      <h2>Seus Favoritos em Simulação</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <img src="./src/img/farming.jpeg" alt="Farming Simulator" />
+          <h3>Farming Simulator</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="farming-simulator">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/city.jpeg" alt="City Builder" />
+          <h3>City Builder</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="city-builder">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/flight.jpeg" alt="Flight Simulator" />
+          <h3>Flight Simulator</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="flight-simulator">🤍</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="todos">
+      <h2>Todos os Jogos de Simulação</h2>
+      <div class="card-grid">
+        <!-- Repita o card abaixo para cada jogo -->
+        <div class="card">
+          <img src="./src/img/house.jpeg" alt="House Flipper" />
+          <h3>House Flipper</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="house-flipper">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/sims4.jpeg" alt="The Sims 4" />
+          <h3>The Sims 4</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="the-sims">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/train.jpeg" alt="Train Sim World" />
+          <h3>Train Sim World</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="train-sim-world">🤍</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joca Games - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="./src/scripts/favoritos.js" defer></script>
+
+</body>
+
+</html>

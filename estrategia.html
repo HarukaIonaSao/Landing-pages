@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogos de Estratégia | Jogon</title>
+      <link rel="shortcut icon" href=".//src/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/root.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/cards.css" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <div class="logo">📦 Jogos</div>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a class="active" href="estrategia.html">🎯 Estratégia</a>
+      <a href="puzzle.html">🧩 Puzzle</a>
+      <a href="simulacao.html">🛠 Simulação</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <h1>Jogos de Estratégia</h1>
+
+    <section class="favoritos">
+      <h2>Seus Favoritos em Estratégia</h2>
+            <div class="card-grid">
+
+      <div class="card">
+        <img src="./src/img/age.jpeg" alt="Age of Empires" />
+        <h3>Age of Empires</h3>
+        <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="age-of-empires">🤍</button>
+      </div>
+      <div class="card">
+        <img src="./src/img/civ6.jpeg" alt="Civilization VI" />
+        <h3>Civilization VI</h3>
+        <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="civ6">🤍</button>
+      </div>
+      <div class="card">
+        <img src="./src/img/starcraft.jpeg" alt="Starcraft II" />
+        <h3>Starcraft II</h3>
+        <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="starcraft">🤍</button>
+      </div>
+    </section>
+
+    <section class="todos">
+      <h2>Todos os Jogos de Estratégia</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="./src/img/warcraft.jpeg" alt="Warcraft III" />
+          <h3>Warcraft III</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="warcraft">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/command.jpeg" alt="Command & Conquer" />
+          <h3>Command & Conquer</h3>
+          <div class="stars">★★★★☆</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="command-conquer">🤍</button>
+        </div>
+        <div class="card">
+          <img src="./src/img/rise.jpeg" alt="Rise of Nations" />
+          <h3>Rise of Nations</h3>
+          <div class="stars">★★★★★</div>
+<button class="favorite" onclick="toggleFavorite(this)" data-id="rise-of-nations">🤍</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joca Games - Todos os direitos reservados</p>
+  </footer>
+      <script src="./src/scripts/favoritos.js" defer></script>
+
+</body>
+</html>
